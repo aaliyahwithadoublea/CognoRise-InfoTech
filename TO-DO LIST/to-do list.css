@@ -1,0 +1,101 @@
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the to-do list */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header styles */
+h1 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* Styles for the input section */
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+/* Task list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li input[type="text"] {
+    border: none;
+    background: none;
+    width: 80%;
+}
+
+/* Styles for edit and delete buttons */
+li .edit, li .delete {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li .edit:hover, li .delete:hover {
+    color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .todo-input {
+        flex-direction: column;
+    }
+
+    #taskInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #addTaskButton {
+        width: 100%;
+    }
+}

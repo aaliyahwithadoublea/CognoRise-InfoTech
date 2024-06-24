@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Basic styles for the body to center the content and set background */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    color: #ffffff;
+}
+
+/* Container styles for alignment and padding */
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Heading styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Flexbox container for countdown elements with wrap and gap */
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */}
+
+/* Styles for each countdown element */
+.countdown-element {
+    background: rgba(255, 255, 255, 0.1);   
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1 1 100px;
+    min-width: 80px;
+    outline: 2px solid orange;
+}
+
+/* Hover effect for countdown elements */
+.countdown-element:hover {
+    transform: scale(1.1);
+}
+
+/* Styles for countdown numbers */
+.countdown-number {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;}
+
+/* Styles for countdown labels */
+.countdown-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .countdown-number {
+        font-size: 3rem;
+    }
+
+    .countdown-label {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .countdown-number {
+        font-size: 2.5rem;
+    }
+
+    .countdown-label {
+        font-size: 0.9rem;
+    }
+}
