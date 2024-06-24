@@ -1,6 +1,5 @@
-/* styles.css */
+/* countdown.css */
 
-/* Basic styles for the body to center the content and set background */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -18,14 +17,13 @@ body {
     padding: 20px;
   }
 
-/* Heading styles */
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Flexbox container for countdown elements with wrap and gap */
+/* Flexbox container for countdown elements */
 .countdown {
     display: flex;
     justify-content: center;

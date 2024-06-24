@@ -1,4 +1,3 @@
-// script.js
 
 // Function to calculate and update the countdown
 function countdown() {
